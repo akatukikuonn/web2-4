@@ -37,13 +37,13 @@
              },
         handleSubmit: function(e){
          e.preventDefault();
-         var comment =this.state.inputvalue;
+         var comment = this.state.inputvalue;
          this.setState({
               comments: this.state.comments.concat(comment),
               inputValue:''
               })
          },
-         handleChange: function(e){
+         handleChange: function(e) {
             this.setState({
                 inputValue: e.target.value
               });
